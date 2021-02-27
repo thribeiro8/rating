@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+app-root table {
+  border-spacing: 0;
+}
+
+app-root td {
+  border-bottom: 1px solid black;
+  padding: 4px;
+}
+
+app-root .tit-table {
+  font-weight: bold;
+  text-align: center;
+}
+
+app-avaliacao .rating {
+  color: rgb(168, 151, 0);
+}
