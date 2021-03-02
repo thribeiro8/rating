@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-avaliacao',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class AvaliacaoComponent {
   @Input() avaliacao: number;
+  @Output() mudancaAvaliacao = new EventEmitter<number>();
+
+  onClick(i: number) {
+    this.mudancaAvaliacao.emit(i);
+  }
 }

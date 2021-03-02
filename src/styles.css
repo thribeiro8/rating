@@ -20,4 +20,5 @@ app-root .tit-table {
 
 app-avaliacao .rating {
   color: rgb(168, 151, 0);
+  cursor: pointer;
 }

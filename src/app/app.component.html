@@ -1,4 +1,5 @@
 <h2>Filmes</h2>
+<!-- prettier-ignore -->
 <table>
   <tr>
     <td class="tit-table">Título</td>
@@ -7,7 +8,10 @@
   <tr *ngFor="let movie of movies">
     <td>{{ movie.titulo }}</td>
     <td>
-      <app-avaliacao [avaliacao]="movie.nota"></app-avaliacao>
+      <app-avaliacao
+      [avaliacao]="movie.nota"
+      (mudancaAvaliacao)="movie.nota = $event">
+      </app-avaliacao>
     </td>
   </tr>
 </table>
